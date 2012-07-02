@@ -58,7 +58,7 @@ Python loggers also have loglevels. The base topic of messages emitted by the PU
 will be of the form: ``<handler.root_topic>.<loglevel>``, e.g. 'myprogram.INFO' or
 'whatever.ERROR'. This way, subscribers can easily subscribe to subsets of the logging
 messages. Log messages are always two-part, where the first part is the topic tree, and
-the second part is the actual log message.
+the second part is the actual log message::
 
     >>> logger.info('hello there')
     >>> print sub.recv_multipart()
@@ -80,5 +80,3 @@ and added to the topic tree::
     >>> logger.warn(msg)
     >>> print sub.recv_multipart()
     ['myprogram.WARN.sub.topic', 'hello there']
-
-
