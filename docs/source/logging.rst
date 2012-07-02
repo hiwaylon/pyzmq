@@ -36,8 +36,8 @@ messages, and subscribing to the empty string '' will receive all messages.
 PUBHandler
 ----------
 
-The :class:`.PUBHandler` object is created for allowing the python logging to be emitted
-on a PUB socket. The main difference between a PUBHandler and a regular logging Handler is
+The :class:`.PUBHandler` object is created for allowing the Python logging to be emitted
+on a PUB socket. The main difference between a PUBHandler and a regular logging handler is
 the inclusion of topics. For the most basic logging, you can simply create a PUBHandler
 with an interface or a configured PUB socket, and just let it go::
 
@@ -50,7 +50,7 @@ with an interface or a configured PUB socket, and just let it go::
 At this point, all messages logged with the default logger will be broadcast on the pub
 socket.
 
-the PUBHandler does work with topics, and the handler has an attribute ``root_topic``::
+The PUBHandler does work with topics, and the handler has an attribute ``root_topic``::
 
     handler.root_topic = 'myprogram'
 
